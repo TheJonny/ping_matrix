@@ -66,7 +66,7 @@ sync_filter["room"]["timeline"]["types"] = ["m.room.message"]
 due = time.time() + args.sync_timeout
 
 while True:
-    timeout = 
+    #timeout = 
     resp = session.get(args.homeserver + "/_matrix/client/v3/sync", params = {
         "since": next_batch,
         "timeout": args.sync_timeout,
